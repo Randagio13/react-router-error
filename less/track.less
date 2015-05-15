@@ -1,0 +1,37 @@
+@import "bootstrap/less/bootstrap";
+@import "paper/variables";
+@import "paper/bootswatch";
+@import "font-awesome/less/font-awesome";
+
+@brand-primary: @brand-success;
+@fa-font-path: "../fonts";
+
+@navbar-height: 75px;
+
+body{
+    padding-top: @navbar-height;
+}
+
+
+// Navbar
+.navbar-nav{
+    > li.with-icon > a > .icon{
+        display: none;
+    }
+    
+    @media (min-width: @grid-float-breakpoint) {
+        > li.with-icon {
+            > a {
+                padding-top:    ((@navbar-height - @line-height-computed - 29px) / 2);
+                padding-bottom: ((@navbar-height - @line-height-computed - 29px) / 2);
+                text-align: center;
+                
+                > .icon{
+                    font-size: 24px;
+                    margin-bottom: 5px;
+                    display: block;
+                }
+            }
+        }
+    }
+}

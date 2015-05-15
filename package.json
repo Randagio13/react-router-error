@@ -1,0 +1,35 @@
+{
+  "name": "Track",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "dependencies": {
+    "babel-runtime": "^5.3.3",
+    "autoprefixer-core": "^5.1.11",
+    "browserify": "^10.1.3",
+    "babelify": "^6.1.0",
+    "es6-react-mixins": "^0.1.4",
+    "babel": "^5.3.3",
+    "gulp-less": "^3.0.3",
+    "react": "^0.13.3",
+    "gulp-postcss": "^5.1.6",
+    "react-router": "^0.13.3",
+    "tcomb": "^1.0.3",
+    "react-bootstrap": "^0.22.0",
+    "tcomb-form": "^0.5.2",
+    "tcomb-validation": "^1.0.4",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "browser":{
+      "core-components": "./src/Core/Components/index.js",
+      "core-utils": "./src/Core/Utils/index.js",
+      "core-routing": "./src/Core/Routing/index.js"
+  }
+}
